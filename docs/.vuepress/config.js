@@ -21,5 +21,20 @@ module.exports = {
   alias: {
     '@': path.resolve(__dirname, './public')
   },
-  plugins: ['@vuepress/back-to-top']
+  plugins: [
+    '@vuepress/back-to-top',
+    [
+      '@vuepress/plugin-search',
+      {
+        locales: {
+          '/': {
+            placeholder: 'Search'
+          },
+          '/zh/': {
+            placeholder: '搜索'
+          }
+        }
+      }
+    ]
+  ]
 }
