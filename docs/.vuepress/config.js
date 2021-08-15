@@ -21,20 +21,8 @@ module.exports = {
   alias: {
     '@': path.resolve(__dirname, './public')
   },
-  plugins: [
-    '@vuepress/back-to-top',
-    [
-      '@vuepress/plugin-search',
-      {
-        locales: {
-          '/': {
-            placeholder: 'Search'
-          },
-          '/zh/': {
-            placeholder: '搜索'
-          }
-        }
-      }
-    ]
-  ]
+  plugins: ['@vuepress/back-to-top', '@vuepress/plugin-search'],
+  themePlugins: {
+    activeHeaderLinks: true
+  }
 }
