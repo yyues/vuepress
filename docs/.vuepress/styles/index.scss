@@ -73,6 +73,7 @@
 
 // plugin-back-to-top
 .back-to-top {
+  bottom: 4rem !important;
   --back-to-top-color: var(--c-brand);
   --back-to-top-color-hover: var(--c-brand-light);
 }
