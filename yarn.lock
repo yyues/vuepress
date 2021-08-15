@@ -414,6 +414,13 @@
     ts-debounce "^3.0.0"
     vue "^3.2.2"
 
+"@vuepress/plugin-back-to-top@^1.8.2":
+  version "1.8.2"
+  resolved "https://registry.nlark.com/@vuepress/plugin-back-to-top/download/@vuepress/plugin-back-to-top-1.8.2.tgz#e9794409d1d589e4952b0700291270d2696e6d01"
+  integrity sha1-6XlECdHVieSVKwcAKRJw0mlubQE=
+  dependencies:
+    lodash.debounce "^4.0.8"
+
 "@vuepress/plugin-container@2.0.0-beta.24":
   version "2.0.0-beta.24"
   resolved "https://registry.nlark.com/@vuepress/plugin-container/download/@vuepress/plugin-container-2.0.0-beta.24.tgz#3095452e9a4cf613a89b60cbccd22739a2a9edfb"
@@ -2291,6 +2298,11 @@ lodash.camelcase@^4.3.0:
   version "4.3.0"
   resolved "https://registry.npm.taobao.org/lodash.camelcase/download/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
   integrity sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
+
+lodash.debounce@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.nlark.com/lodash.debounce/download/lodash.debounce-4.0.8.tgz?cache=0&sync_timestamp=1618847031591&other_urls=https%3A%2F%2Fregistry.nlark.com%2Flodash.debounce%2Fdownload%2Flodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
+  integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
 
 lodash@^4.17.14, lodash@^4.17.20, lodash@^4.17.21:
   version "4.17.21"

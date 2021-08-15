@@ -20,5 +20,6 @@ module.exports = {
   ],
   alias: {
     '@': path.resolve(__dirname, './public')
-  }
+  },
+  plugins: ['@vuepress/back-to-top']
 }

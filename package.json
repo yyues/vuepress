@@ -13,5 +13,8 @@
     "fs": "^0.0.1-security",
     "path": "^0.12.7",
     "vuepress": "^2.0.0-beta.24"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.2"
   }
 }
