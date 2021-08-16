@@ -40,8 +40,9 @@ const handleFormatData = (dirName, text) => {
    * @params text 文本值，相当于页面标题 必选
    */
   // 二级路由处理模式  `${text.replace('.md', '')}`
-  let myText = text == 'README.md' ? `${dirName}` : `${text}`
-  let myLink = text == 'README.md' ? `/${dirName}/` : `/${dirName}/${myText}`
+  let myText = text == 'README.md' ? `${dirName}` : `${text.replace('.md', '')}`
+  let myLink =
+    text == 'README.md' ? `/${dirName}/` : `/${dirName}/${myText}.html`
   let children = {
     text: myText,
     link: myLink
