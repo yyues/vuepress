@@ -852,4 +852,5 @@ walkPeriod.format(); // => '2 hours and 30 minutes'
 
 通过上边的思路，可以使你不再对 `this` 感到头疼！
 
-编辑于 2 小时前
+![this示例说明](./img/this示例说明.png)
+

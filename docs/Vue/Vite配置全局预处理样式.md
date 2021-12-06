@@ -24,7 +24,7 @@ export default defineConfig({
 
 **有成功案例**
 
- ![成功案例](~@/img/viteCss.png)
+
 
 上诉文件是我基于vite + ts + less 实现成功的。
 
