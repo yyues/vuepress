@@ -102,7 +102,7 @@ prop可以传递任意参数，包括函数和组件
 
 - props
 
-  原理上和 vue差不多，是父组件提供回调函数，子组件调用糊掉函数，这其实就是利用props能够传递函数来解决子传父的问题，，vue 参考 该实现，但是对于子传父做了更进一层的封装
+  原理上和 vue差不多，是父组件提供回调函数，子组件调用回调函数，这其实就是利用props能够传递函数来解决子传父的问题，，vue 参考 该实现，但是对于子传父做了更进一层的封装
 
 兄弟组件通信
 
@@ -245,6 +245,39 @@ Tips
 
 - 对prop检验，函数，且必须需要
 - 子组件卸载时，移除任何时间绑定，定时器等
+
+代码示例，免得忘记了
+
+```react
+import React, { Component, Fragment } from 'react'
+
+class ChildRenComponent extends Component {
+  render() {
+    const children = this.props.children as Function
+    return <Fragment>{children()}</Fragment>
+  }
+}
+
+// 定义展示的组件
+export default class RenderProp extends Component {
+  render() {
+    return (
+      <Fragment>
+        <ChildRenComponent>
+          {() => (
+            <Fragment>
+              <button>222</button>
+            </Fragment>
+          )}
+        </ChildRenComponent>
+      </Fragment>
+    )
+  }
+}
+
+```
+
+> PS： 上诉代码使用控制台会打印报错，尽量不使用该方式
 
 ### 高阶组件
 
