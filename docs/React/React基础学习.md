@@ -63,6 +63,22 @@ React的事件对象叫<u>合成事件</u>
 
 - 用来更新state数据，没有传参也会刷新数据，就是更新UI
 
+严格来说，setState并不是单纯的同步或异步，按场景来区分
+
+- 异步
+
+  ​	在 **合成事件** 和 **生命周期钩子（除 componentDidUpdate）**是异步的
+
+- 同步
+
+   在 **原生事件** 和 **setTimeout** 中是同步的
+
+setState有函数式写法和对象式写法，官方推荐使用函数式
+
+```react
+this.setState(state=> ({count: state.count + 100 }) )
+```
+
 ### class组件里的事件绑定
 
 class组件事件处理函数，使用this会爆粗，一般来说使用bind或者箭头函数来解决
